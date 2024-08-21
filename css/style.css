@@ -1,3 +1,49 @@
+/* Custom properties */
+:root{
+    --body-bg: #f1f4ff;
+    --green: #4DC490;
+    --red: #F03535;
+    --gray:  #555;
+    --text-color: #000;
+    --font-family: "Inter", "Arial", sans-serif;
+    
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* inter-500 - latin */
+    @font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* inter-600 - latin */
+    @font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* inter-700 - latin */
+    @font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
 html{
     box-sizing: border-box;
     height: 100%;
@@ -11,11 +57,13 @@ html{
 body{
     display: flex;
     font-display: column;
+    background-color: var(--body-bg);
+    color: var(--text-color);
     padding: 0;
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
     height: 100%;
 }
 
