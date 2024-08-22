@@ -98,7 +98,8 @@ img{
 
 /* Hero */
 .hero {
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -148,7 +149,7 @@ img{
     width: 100%;
     max-width: 570px;
     background-color: #fff;
-    padding: 55px 82px 39px 60px;
+    padding: 55px 60px 40px;
     border-radius: 20px;
     margin-left: 10px;
 }
