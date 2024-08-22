@@ -5,6 +5,7 @@
     --red: #F03535;
     --gray:  #555;
     --text-color: #000;
+    --purple: #655AF2;
     --font-family: "Inter", "Arial", sans-serif;
     
 }
@@ -53,7 +54,10 @@ html{
 ::after {
     box-sizing: inherit;
 }
-
+*:focus{
+    outline: 2px dotted var(--purple);
+    outline-offset: 3px;
+}
 body{
     display: flex;
     font-display: column;
@@ -83,9 +87,137 @@ img{
 
 .main-content{
     flex-grow: 1;
+    padding-top: 80px;
 }
 
+/* Sign up */
+.signup-page {
+    display: flex;
+}
 
+/* Hero */
+.hero {
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.hero-main {
+    --text-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 55px;
+    padding-left: 60px;
+    background-image: url("../img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    flex-grow: 1;
+}
+.hero-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    border-radius: 41px;
+    opacity: 0.8;
+    margin-bottom: 60px;
+}
+.hero-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.hero-text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    margin: 0;
+}
+.hero-bottom{
+    text-align: center;
+    padding: 28px;
+    background-color: var(--green);
+}
+
+/* Sign up form */
+.signup-form {
+    width: 100%;
+    max-width: 570px;
+    background-color: #fff;
+    padding: 55px 82px 39px 60px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.signup-form-heading {
+    color: var(--text-color);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 80px;
+}
+.input-fields {
+    margin-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+}
+.form-input {
+    display: block;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    border-bottom: 1px solid #555;
+    padding-bottom: 14px;
+}
+.form-input:not(:last-child){
+    margin-bottom: 35px;
+}
+.form-input:focus{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+.button {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    background-color: var(--purple);
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease color,
+    .3s ease background-color,
+    .3s ease opacity;
+}
+.button:hover{
+    color: var(--purple);
+    background-color: #fff;
+    border: 1px solid var(--purple);
+    opacity: 0.8;
+}
+.button:active{
+    color: #fff;
+    background-color: var(--purple);
+    opacity: 0.6;
+    border: 0;
+}
+.signup-form-notice {
+    color: #555;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+}
+.signup-form-notice-link {
+    font-weight: 500;
+    color: #f03535;
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
