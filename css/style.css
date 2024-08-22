@@ -93,6 +93,7 @@ img{
 /* Sign up */
 .signup-page {
     display: flex;
+    padding-bottom: 80px;
 }
 
 /* Hero */
